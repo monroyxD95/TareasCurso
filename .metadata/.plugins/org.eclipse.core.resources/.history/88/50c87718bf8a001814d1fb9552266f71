@@ -1,0 +1,26 @@
+package yahoo;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+
+@RunWith(JUnitParamsRunner.class)
+public class YahooJUnit extends YahooCont {
+	@Test
+	@FileParameters("./data/paramsYahoo.csv")//indica de donde son los parametros
+	public void testYahooCreateAccount(String browser, String url,
+			String name, String apellido, String correo, String pass, String telefono, String dia,String year,String sex, String pais) {
+		
+		setUp(browser, url);
+		
+		createAccount(name, apellido, correo, pass, telefono, dia, year, sex,pais);
+		
+	
+		
+	}
+
+	
+
+}

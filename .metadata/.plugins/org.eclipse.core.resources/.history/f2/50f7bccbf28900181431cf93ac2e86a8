@@ -1,0 +1,12 @@
+package src1.tareas;
+
+import libs.Input;
+
+public class HolaMundo {
+	public static void main(String[] args) {
+		String text=null;
+		Input.print("Ingresa Texto");
+		text=Input.get_string();
+		Input.print("Hello"+text);
+	}
+}

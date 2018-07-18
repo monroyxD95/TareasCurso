@@ -1,0 +1,30 @@
+package until;
+
+import org.openqa.selenium.By;
+
+public class Locators {
+	public static final By USER_FIELD_LOCATOR= By.id("email");
+	public static final By PASS_FIELD_LOCATOR= By.id("pass");
+	public static final By BUTTON_FIELD_LOCATOR= By.xpath("//label[@id='loginbutton']//input");
+	public static final By BUTTON_SEARCH_LOCATOR= By.xpath("//button[@class='_42ft _4jy0 _4w98 _4jy3 _517h _51sy _4w97']");
+	public static final By CAMPO_SEARCH_LOCATOR= By.xpath("//input[@class='_1frb']");
+	public static final By LINK_PERFILFRIEND_LOCATOR= By.xpath("//div[@class='_52eh _5bcu']");
+	public static final By ADD_LIKE_LOCATOR= By.xpath("//button[@class='likeButton _4jy0 _4jy4 _517h _51sy _42ft']");
+	public static final By ADD_FOTO_LOCATOR= By.xpath("//button[@href='/LosMensajerosUrbanos/photos/?ref=page_internal']");
+	public static final By CONT_FOTOS_LOCATOR= By.xpath("//div[@class='_2eec']//img");
+	
+	public static final By LINKCOR_YAHOO_LOCATOR= By.id("uh-mail-link");
+	public static final By LINKCREATE_YAHOO_LOCATOR= By.xpath("//a[@href='/account/create?lang=&done=https%3A%2F%2Fmail.yahoo.com%2F%3F.intl%3De1%26.lang%3Des-US%26.partner%3Dnone%26.src%3Dfp&src=ym&specId=yidReg']");
+	public static final By NAME_YAHOO_LOCATOR= By.id("usernamereg-firstName");
+	public static final By APP_YAHOO_LOCATOR= By.id("usernamereg-lastName");
+	public static final By COR_YAHOO_LOCATOR= By.id("usernamereg-yid");
+	public static final By PASS_YAHOO_LOCATOR= By.id("usernamereg-password");
+	public static final By TEL_YAHOO_LOCATOR= By.id("usernamereg-phone");
+	public static final By DAY_YAHOO_LOCATOR= By.id("usernamereg-day");
+	public static final By YEAR_YAHOO_LOCATOR= By.id("usernamereg-year");
+	public static final By SEX_YAHOO_LOCATOR= By.id("usernamereg-freeformGender");
+	public static final By BUTTONREG_YAHOO_LOCATOR=By.id("reg-submit-button");
+	public static final By SELECTPAIS_YAHOO_LOCATOR=By.xpath("//*[@id='usernamereg-month']/option[9]");
+	
+	
+}

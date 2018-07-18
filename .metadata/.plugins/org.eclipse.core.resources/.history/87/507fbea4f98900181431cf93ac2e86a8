@@ -1,0 +1,28 @@
+package src1.tareas;
+
+import libs.Input;
+
+public class Monedas {
+	public static void main(String[] args) {
+		double cambio,y;
+		int a=25, b=10,c=5,d=1;
+		int res;
+		int x=0;
+		Input.print("Ingresa el Cambio que te debo: ");
+		cambio=Input.get_double();
+		
+		Input.print("Cambio: "+cambio+"\n");
+		if(cambio>a) {
+			double re=cambio/a;
+			res=(int) re;//convertir double a int
+			x=res*a;
+			y=cambio-x;
+			
+			
+			Input.print("25c -"+res+"-->"+y);
+		}if((cambio>10)&&(cambio<25)) {
+			cambio=cambio/b;
+			Input.print("10c -"+cambio);
+		}
+	}
+}

@@ -1,0 +1,42 @@
+package yahoo;
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import until.Locators;
+
+public class YahooCont {
+protected WebDriver driver;
+	
+	protected void setUp(String browser, String url) {
+		System.out.println("Arranca el browser porfa y navega a la pagina.");
+		ChromeOptions options = new ChromeOptions ();
+		options.addArguments ("- disable-notificaciones");
+		System.setProperty("webdriver.chrome.driver", "C:\\test_automation\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver(options);
+		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	
+	protected void createAccount(String name, String apellido, String correo, String pass, String telefono, String dia,
+			String year, String sex) {
+		driver.findElement(Locators.LINKCOR_YAHOO_LOCATOR).click();
+		driver.findElement(Locators.LINKCREATE_YAHOO_LOCATOR).click();
+		driver.findElement(Locators.NAME_YAHOO_LOCATOR).sendKeys(name);
+		driver.findElement(Locators.APP_YAHOO_LOCATOR).sendKeys(apellido);
+		driver.findElement(Locators.COR_YAHOO_LOCATOR).sendKeys(correo);
+		driver.findElement(Locators.PASS_YAHOO_LOCATOR).sendKeys(pass);
+		driver.findElement(Locators.TEL_YAHOO_LOCATOR).sendKeys(telefono);
+		driver.findElement(Locators.SELECTPAIS_YAHOO_LOCATOR).click();
+		driver.findElement(Locators.DAY_YAHOO_LOCATOR).sendKeys(dia);
+		driver.findElement(Locators.YEAR_YAHOO_LOCATOR).sendKeys(year);
+		driver.findElement(Locators.SEX_YAHOO_LOCATOR).sendKeys(sex);
+		driver.findElement(Locators.BUTTONREG_YAHOO_LOCATOR).click();
+		
+	}
+	
+}

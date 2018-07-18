@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="YahooJUnit" project="junitWebDriver" tests="1" started="1" failures="0" errors="2" ignored="0">
+  <testsuite name="yahoo.YahooJUnit" time="47.224">
+    <testsuite name="testYahooCreateAccount" time="47.224">
+      <testcase name="[0] chrome,https://espanol.yahoo.com/?p=us,ana,monroy,monroyana95,monroyxD,7228724882,5,1995,Mujer (testYahooCreateAccount)" classname="yahoo.YahooJUnit" time="47.224">
+        <error>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:14.902Z'
+System info: host: 'DELL-PC', ip: '192.168.15.65', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: ChromeDriver&#13;
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)&#13;
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)&#13;
+	at yahoo.YahooCont.setUp(YahooCont.java:20)&#13;
+	at yahoo.YahooJUnit.testYahooCreateAccount(YahooJUnit.java:16)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at junitparams.internal.InvokeParameterisedMethod.evaluate(InvokeParameterisedMethod.java:211)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runMethodInvoker(ParameterisedTestMethodRunner.java:47)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runTestMethod(ParameterisedTestMethodRunner.java:40)&#13;
+	at junitparams.internal.ParameterisedTestClassRunner.runParameterisedTest(ParameterisedTestClassRunner.java:147)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:414)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:385)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:25244/status] to be available after 30229 ms&#13;
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)&#13;
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)&#13;
+	... 36 more&#13;
+Caused by: java.util.concurrent.TimeoutException&#13;
+	at java.util.concurrent.FutureTask.get(Unknown Source)&#13;
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)&#13;
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)&#13;
+	... 37 more&#13;
+&#13;
+java.lang.IllegalAccessException: Class org.junit.runners.model.FrameworkMethod$1 can not access a member of class yahoo.YahooCont with modifiers "protected"&#13;
+	at sun.reflect.Reflection.ensureMemberAccess(Unknown Source)&#13;
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(Unknown Source)&#13;
+	at java.lang.reflect.AccessibleObject.checkAccess(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runMethodInvoker(ParameterisedTestMethodRunner.java:47)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runTestMethod(ParameterisedTestMethodRunner.java:40)&#13;
+	at junitparams.internal.ParameterisedTestClassRunner.runParameterisedTest(ParameterisedTestClassRunner.java:147)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:414)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:385)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

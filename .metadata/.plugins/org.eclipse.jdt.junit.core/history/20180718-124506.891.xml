@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="FacebookJUnitExample" project="junitWebDriver" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="facebook.FacebookJUnitExample" incomplete="true">
+    <testsuite name="testFacebookLogin" incomplete="true">
+      <testcase name="[0] chrome,http://facebook.com,monroeana95@gmail.com,monroyxD,mensajeros urbanos (testFacebookLogin)" classname="facebook.FacebookJUnitExample" incomplete="true"/>
+    </testsuite>
+  </testsuite>
+</testrun>

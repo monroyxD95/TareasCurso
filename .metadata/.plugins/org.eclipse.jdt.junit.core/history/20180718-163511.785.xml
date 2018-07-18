@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="YahooJUnit" project="junitWebDriver" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="yahoo.YahooJUnit" time="0.0">
+    <testsuite name="testYahooCreateAccount" time="0.0">
+      <testcase name="[0] chrome,https://espanol.yahoo.com/?p=us,ana,monroy,monroyana95,monroyxD,7228724882,5,1995,Mujer (testYahooCreateAccount)" classname="yahoo.YahooJUnit" time="0.0">
+        <error>java.lang.IllegalAccessException: Class org.junit.runners.model.FrameworkMethod$1 can not access a member of class yahoo.YahooCont with modifiers "protected"&#13;
+	at sun.reflect.Reflection.ensureMemberAccess(Unknown Source)&#13;
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(Unknown Source)&#13;
+	at java.lang.reflect.AccessibleObject.checkAccess(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runMethodInvoker(ParameterisedTestMethodRunner.java:47)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runTestMethod(ParameterisedTestMethodRunner.java:40)&#13;
+	at junitparams.internal.ParameterisedTestClassRunner.runParameterisedTest(ParameterisedTestClassRunner.java:147)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:414)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:385)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

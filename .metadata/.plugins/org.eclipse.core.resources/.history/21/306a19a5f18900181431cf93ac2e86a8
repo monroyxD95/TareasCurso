@@ -1,0 +1,21 @@
+package src1.tareas;
+
+import libs.Input;
+
+public class Botellas {
+	public static void main(String[] args) {
+		for(int a=0; a<=0; a++) {
+			int numB=0;
+			Input.print("Ingresa numero de botellas ");
+	        numB = Input.get_int();
+		
+		int bot=0;
+		 
+		bot=numB*12;
+		Input.print("MINUTOS:"+numB+"\n");
+		Input.print("BOTELLAS:"+bot+"\n");
+		
+		}
+	}
+
+}

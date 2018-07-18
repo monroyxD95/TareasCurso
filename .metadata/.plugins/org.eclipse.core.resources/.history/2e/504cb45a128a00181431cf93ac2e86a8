@@ -1,0 +1,90 @@
+package imdb;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.junit.Assert;
+
+public class ParentTest {
+	
+	protected WebDriver driver;
+	
+	@Before
+	public void setUp() {
+		System.setProperty("webdriver.chrome.driver", "C:\\test_automation\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+		
+		
+	}
+	
+	@After
+	public void tearDown() {
+		driver.quit();
+		
+	}
+	protected void validateMovieExists() {
+		// TODO Auto-generated method stub
+		
+		Assert.assertEquals("uno", "dos");
+	}
+
+	protected void searchMovie() {
+		// TODO Auto-generated method stub
+		driver.findElement(By.id("navbar-query")).sendKeys("The Walking Dead");
+		driver.findElement(By.id("navbar-submit-button")).click();
+		//buscarBox.clear();
+		//buscarBox.sendKeys(movie);
+		//buscarButton.click();
+	 driver.findElement(By.cssSelector("css=td.result_text > a")).click();
+		
+
+		
+	}
+
+	protected void validatePage() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	protected void navigateToPage(String url) {
+		// TODO Auto-generated method stub
+		driver.navigate().to(url);
+		
+	}
+	
+	protected void playTrailer() {
+		// TODO Auto-generated method stub
+		WebElement link = driver.findElement(By.cssSelector("css=td.result_text > a"));
+		link.click();
+		WebElement play = driver.findElement(By.xpath("//div[@id='title-overview-widget']/div[2]/div[4]/div[2]/a"));
+		play.click();
+		
+	}
+
+	protected void validateCorrectMovie() {
+		// TODO Auto-generated method stub
+	// driver.findElement(By.xpath("//td[@class='result_text']//*[.='2010']"));
+		// Assert.assertEquals("2010", "anbox");
+	}
+
+	protected void selectMovie() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	protected void validateMovieStars() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}
